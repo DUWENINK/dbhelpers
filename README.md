@@ -1,6 +1,6 @@
-# DBHelpers
+# DUWENINK.DBHelpers
 
-DBHelpers is a simple but powerful library for working with plain ADO.NET.
+DUWENINK.DBHelpers is a simple but powerful library for working with plain ADO.NET.
 
 There are countless frameworks for data access, but most of them get in the way when you need to run direct SQL.
 If you want to optimize complex operations, or just want to run some sql without mapping classes, this library is for you.
@@ -9,15 +9,15 @@ This library is not intended to replace any big framework, but is a nice and lig
 
 ## System Requirements
 
-DBHelpers is coded for .NET 4.5 and should work with any .NET Data Provider.
+DUWENINK.DBHelpers is coded for .NET 4.5 and should work with any .NET Data Provider.
 
 ## Installation
 
 
-You can install DBHelpers from [Nuget](https://www.nuget.org/packages/DBHelpers/):
+You can install DUWENINK.DBHelpers from [Nuget](https://www.nuget.org/packages/DUWENINK.DBHelpers/):
 
 ```
-Install-Package DBHelpers
+Install-Package DUWENINK.DBHelpers
 ```
 
 ## Quick Start
@@ -56,7 +56,7 @@ var client = db.ExecuteObject<Client>("select * from client");
 
 ADO.NET is not hard to use, but as any low level component it requires a lot of plumbing. It requires you to explicitly open connections and remember to close them. It requires you to convert values and handle DBNulls. As you work with it, it becomes clear that many things could be automated. This library is basically a lot of overloads that do most of this plumbing and let you concentrate on what you need to do.
 
-DBHelpers is composed of 2 main helper classes:
+DUWENINK.DBHelpers is composed of 2 main helper classes:
 
 * **DBHelper**: handles query execution
 * **DBConvert**: handles common cases of type conversion when using by ADO.NET (similar to System.Convert)
@@ -92,7 +92,7 @@ All methods are optimized for speed and will do as little as possible and return
 
 ### Automatic Type Conversion
 ---
-When loading data from the database, values can be null/DBNull or can be of a slightly different type. DBHelpers adds some extension methods to DbDataReader, so you can safely expect certain types.
+When loading data from the database, values can be null/DBNull or can be of a slightly different type. DUWENINK.DBHelpers adds some extension methods to DbDataReader, so you can safely expect certain types.
 
 This is how you can read data from a table to a list of anonymous objects for quick use:
 
@@ -238,4 +238,4 @@ var arr = db.ExecuteArray("select id from top_visitors", 0, 100);
 
 ## Getting Help / Contributing
 
-If you have any question, suggestion, feature request or found a bug, please use the [issue tracker](https://github.com/nvivo/dbhelpers/issues).
+If you have any question, suggestion, feature request or found a bug, please use the [issue tracker](https://github.com/DUWENINK/dbhelpers/issues).

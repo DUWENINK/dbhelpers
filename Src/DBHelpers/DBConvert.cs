@@ -1,5 +1,5 @@
 ﻿#region License
-//  Copyright 2010-2015 Natan Vivo - http://github.com/nvivo/dbhelpers
+//  Copyright 1994-2024 DUWENINK - http://github.com/DUWENINK/dbhelpers
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.

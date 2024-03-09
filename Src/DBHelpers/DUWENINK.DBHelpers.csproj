@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyTitle>DUWENINK.DBHelpers</AssemblyTitle>
+    <Description>DUWENINK.DBHelpers</Description>
+    <Product>DUWENINK.DBHelpers</Product>
+    <Copyright>Copyright © DUWENINK 1994-2023</Copyright>
+	<PackageReleaseNotes>996公司就不要用了,我会告你</PackageReleaseNotes>
+	<PackageProjectUrl>https://github.com/DUWENINK/dbhelpers</PackageProjectUrl>
+	<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+	<Company>DUWENINK</Company>
+	<Authors>DUWENINK</Authors>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+	  <Version>1.2.0</Version>
+
+	  <AssemblyVersion>1.2.0</AssemblyVersion>
+    <FileVersion>1.2.0</FileVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
+    <None Include="../../README.md" Pack="true" PackagePath="\" />
+    <None Include="../../LICENSE.txt" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+</Project>
